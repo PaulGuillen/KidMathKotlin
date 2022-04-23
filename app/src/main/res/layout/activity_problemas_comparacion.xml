@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".operations.settings.details.segmenttwo.ProblemasComparacionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ActionBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:text="Problemas de"
+                    android:textColor="@color/green_primary_dark"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:paddingStart="5dp"
+                    android:text="comparación"
+                    android:textColor="@color/color_primary_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_body"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint_bottom"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_percent_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_percent_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+
+            <TextView
+                android:id="@+id/textenunciado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Observa los diálogos del problema de ejemplo y resuelve los otros problemas"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
+                android:text="Manuel : Recolectamos 170kg \nde papel"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textenunciado" />
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/kid"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textview1" />
+
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
+                android:text="Hugo : Mi aula recolectó 35kg \nde papel menos \nque la de Manuel"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/imageview1" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/kid"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textview2" />
+
+
+            <View
+                android:id="@+id/view_mid"
+                android:layout_width="3dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue_primary_dark"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/imageview2" />
+
+            <View
+                android:id="@+id/view_left_top"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:background="@color/blue_primary_dark"
+                app:layout_constraintEnd_toStartOf="@+id/view_mid"
+                app:layout_constraintTop_toTopOf="@+id/view_mid" />
+
+            <View
+                android:id="@+id/view_left_mid"
+                android:layout_width="3dp"
+                android:layout_height="150dp"
+                android:background="@color/blue_primary_dark"
+                app:layout_constraintEnd_toStartOf="@+id/view_left_top"
+                app:layout_constraintTop_toTopOf="@+id/view_left_top" />
+
+            <View
+                android:id="@+id/view_left_bottom"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:background="@color/blue_primary_dark"
+                app:layout_constraintBottom_toBottomOf="@+id/view_mid"
+                app:layout_constraintEnd_toStartOf="@+id/view_mid" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="170"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/view_left_bottom"
+                app:layout_constraintEnd_toStartOf="@+id/view_mid"
+                app:layout_constraintStart_toEndOf="@+id/view_left_mid"
+                app:layout_constraintTop_toBottomOf="@+id/view_left_top" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="Aula de Manuel"
+                android:textColor="@color/blue_primary_dark"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/view_left_mid"
+                app:layout_constraintStart_toStartOf="@+id/view_left_mid"
+                app:layout_constraintTop_toBottomOf="@+id/view_left_bottom" />
+
+
+            <View
+                android:id="@+id/view_mid_second"
+                android:layout_width="4dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/light_green_primary"
+                app:layout_constraintBottom_toBottomOf="@+id/view_mid"
+                app:layout_constraintStart_toEndOf="@+id/view_mid" />
+
+
+            <View
+                android:id="@+id/view_left_bottom_second"
+                android:layout_width="60dp"
+                android:layout_height="4dp"
+                android:background="@color/light_green_primary"
+                app:layout_constraintBottom_toBottomOf="@+id/view_mid_second"
+                app:layout_constraintStart_toEndOf="@+id/view_mid_second" />
+
+
+            <View
+                android:id="@+id/view_left_top_second"
+                android:layout_width="60dp"
+                android:layout_height="4dp"
+                android:background="@color/light_green_primary"
+                app:layout_constraintStart_toEndOf="@+id/view_mid_second"
+                app:layout_constraintTop_toTopOf="@+id/view_mid_second" />
+
+            <View
+                android:id="@+id/view_mid_right_second"
+                android:layout_width="4dp"
+                android:layout_height="100dp"
+                android:background="@color/light_green_primary"
+                app:layout_constraintBottom_toBottomOf="@+id/view_mid_second"
+                app:layout_constraintStart_toEndOf="@+id/view_left_top_second" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="170 - \n35 = x"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/view_left_bottom_second"
+                app:layout_constraintEnd_toStartOf="@+id/view_mid_right_second"
+                app:layout_constraintStart_toEndOf="@+id/view_mid_second"
+                app:layout_constraintTop_toBottomOf="@+id/view_left_top_second" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:fontFamily="@font/muli"
+                android:text="Aula de Hugo"
+                android:textColor="@color/light_green_primary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view_mid_right_second"
+                app:layout_constraintStart_toEndOf="@+id/view_mid_second"
+                app:layout_constraintTop_toBottomOf="@+id/view_left_bottom_second" />
+
+            <TextView
+                android:id="@+id/text_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="¿Cuantos kilogramos de papael recolectó el aula de Hugo?"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview4" />
+
+            <TextView
+                android:id="@+id/text_bottom_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Respuesta: 170 - 35 = 135, entonces el aula de Hugo recolectó 135 kilogramos de papel."
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_bottom" />
+
+            <TextView
+                android:id="@+id/text_practica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
+                android:text="Practiquemos..."
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/red_primary_dark"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_bottom_second" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/muli"
+                android:text="Juan tiene algunos caramelos y le dan 8 más. Si ahora tiene 15. ¿Cuántos caramelos tenía al principio?
+                \n\nMiguel ha realizado varias fotos y por la tarde va ha hacer 6 que por la mañana. Al final tiene hechas 76 fotografías. ¿Cuántas fotografías había hecho al principio?
+                \n\nUn tren sale a las 7 horas y 20 minutos, y llega a su destino a las 12 horas y 30 minutos. ¿Cuánto dura el viaje?"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_practica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Volver"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Siguiente"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

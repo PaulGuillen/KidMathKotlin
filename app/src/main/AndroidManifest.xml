@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="devpaul.business.kidmath">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KidMath">
+        <activity
+            android:name=".operations.settings.details.segmenttwo.ProblemasIgualacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmenttwo.ProblemasComparacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmenttwo.CalculoMentalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".operations.settings.details.segmentone.CompararCantidadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmentone.CentenasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".operations.settings.details.segmentone.DecimalDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmentone.ProblemsQuantityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".operations.settings.details.DivDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.FracDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmenttwo.MultDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.GameDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.div.DivGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.mult.MultGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.sum.GameOverSumaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.rest.GameOverRestaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.div.GameOverDivisionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.mult.GameOverMultiplicacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.sum.SumGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.rest.RestGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".operations.level.LevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

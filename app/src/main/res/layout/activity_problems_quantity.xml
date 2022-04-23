@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".operations.settings.details.segmentone.ProblemsQuantityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ActionBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:text="Representando"
+                    android:textColor="@color/green_primary_dark"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:paddingStart="5dp"
+                    android:text="cantidades"
+                    android:textColor="@color/color_primary_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_body"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint_bottom"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+
+            <TextView
+                android:id="@+id/textenunciado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Arturo revisó el inventario de útiles de escritorio en el almacén donde trabaja. ¿Cuántos lapiceros, plumones, tajadores y borradores hay?"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kid"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/box"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textenunciado" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:paddingStart="5dp"
+                android:text="= Hay mil quinientos \nveinticinco lapiceros."
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintStart_toEndOf="@+id/guideline_percent"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="= Hay cuatro mil \ndoscientos treinta \ny dos plumones."
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintStart_toEndOf="@+id/guideline_percent"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="= Hay nueve mil \nciento siente \nborradores."
+                android:paddingStart="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintStart_toEndOf="@+id/guideline_percent"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="= Hay dos mil\ncuatrocientos seis \ntajadores."
+                android:paddingStart="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintStart_toEndOf="@+id/guideline_percent"
+                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+            <TextView
+                android:id="@+id/text_ejemplo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Cuántos lapiceros, plumones, tajadores y borradores hay?"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="4dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="-80dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_primary_gray"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/text_ejemplo" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view" />
+
+            <View
+                android:id="@+id/view_dos"
+                android:layout_width="4dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="50dp"
+                android:background="@color/color_primary_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@id/view" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_green"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_green"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ball_green"
+                app:layout_constraintBottom_toTopOf="@+id/imageView15"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ball_green"
+                app:layout_constraintBottom_toTopOf="@+id/imageView16"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_green"
+                app:layout_constraintBottom_toTopOf="@+id/imageView17"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <ImageView
+                android:id="@+id/image_ball_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_green"
+                app:layout_constraintBottom_toBottomOf="@+id/view_dos"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <View
+                android:id="@+id/view_tres"
+                android:layout_width="4dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="50dp"
+                android:background="@color/color_primary_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@id/view_dos" />
+
+            <ImageView
+                android:id="@+id/image_ball_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_red"
+                app:layout_constraintBottom_toBottomOf="@+id/view_tres"
+                app:layout_constraintEnd_toEndOf="@+id/view_tres"
+                app:layout_constraintStart_toStartOf="@+id/view_tres" />
+
+            <ImageView
+                android:id="@+id/image_ball_red2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_red"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_red"
+                app:layout_constraintEnd_toEndOf="@+id/view_tres"
+                app:layout_constraintStart_toStartOf="@+id/view_tres" />
+
+
+            <View
+                android:id="@+id/view_cuatro"
+                android:layout_width="4dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="50dp"
+                android:background="@color/color_primary_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/view_tres"
+                app:layout_constraintStart_toStartOf="@id/view_tres" />
+
+            <ImageView
+                android:id="@+id/image_ball_blue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_blue"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_blue"
+                app:layout_constraintEnd_toEndOf="@+id/view_cuatro"
+                app:layout_constraintStart_toStartOf="@+id/view_cuatro" />
+
+            <ImageView
+                android:id="@+id/image_ball_blue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_blue"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_blue2"
+                app:layout_constraintEnd_toEndOf="@+id/view_cuatro"
+                app:layout_constraintStart_toStartOf="@+id/view_cuatro" />
+
+            <ImageView
+                android:id="@+id/image_ball_blue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_blue"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_blue3"
+                app:layout_constraintEnd_toEndOf="@+id/view_cuatro"
+                app:layout_constraintStart_toStartOf="@+id/view_cuatro" />
+
+            <ImageView
+                android:id="@+id/image_ball_blue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_blue"
+                app:layout_constraintBottom_toTopOf="@+id/image_ball_blue4"
+                app:layout_constraintEnd_toEndOf="@+id/view_cuatro"
+                app:layout_constraintStart_toStartOf="@+id/view_cuatro" />
+
+            <ImageView
+                android:id="@+id/image_ball_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/ball_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/view_cuatro"
+                app:layout_constraintEnd_toEndOf="@+id/view_cuatro"
+                app:layout_constraintStart_toStartOf="@+id/view_cuatro" />
+
+            <View
+                android:id="@+id/view_bottom"
+                android:layout_width="250dp"
+                android:layout_height="5dp"
+                android:background="@color/brown_primary"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:text="Um"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:text="C"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/image_ball_green"
+                app:layout_constraintStart_toStartOf="@+id/image_ball_green"
+                app:layout_constraintTop_toBottomOf="@+id/image_ball_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:text="D"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/image_ball_red"
+                app:layout_constraintStart_toStartOf="@+id/image_ball_red"
+                app:layout_constraintTop_toBottomOf="@+id/image_ball_red" />
+
+            <TextView
+                android:id="@+id/text_U"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:text="U"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/image_ball_blue"
+                app:layout_constraintStart_toStartOf="@+id/image_ball_blue"
+                app:layout_constraintTop_toBottomOf="@+id/image_ball_blue" />
+
+            <TextView
+                android:id="@+id/text_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="5dp"
+                android:text="C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/text_U" />
+
+            <EditText
+                android:id="@+id/edt_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_editext"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:inputType="text"
+                android:padding="10dip"
+                android:text="5"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_c"
+                app:layout_constraintEnd_toStartOf="@+id/text_c"
+                app:layout_constraintTop_toTopOf="@+id/text_c" />
+
+            <TextView
+                android:id="@+id/text_um"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="5dp"
+                android:text="Um"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_c"
+                app:layout_constraintEnd_toStartOf="@+id/edt_c"
+                app:layout_constraintTop_toTopOf="@+id/edt_c" />
+
+            <EditText
+                android:id="@+id/edt_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_editext"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:inputType="text"
+                android:padding="10dip"
+                android:text="1"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_um"
+                app:layout_constraintEnd_toStartOf="@+id/text_um"
+                app:layout_constraintTop_toTopOf="@+id/text_um" />
+
+            <EditText
+                android:id="@+id/edt_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_editext"
+                android:clickable="false"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:inputType="text"
+                android:padding="10dip"
+                android:focusable="false"
+                android:text="2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_c"
+                app:layout_constraintStart_toEndOf="@+id/text_c"
+                app:layout_constraintTop_toTopOf="@+id/text_c" />
+
+            <TextView
+                android:id="@+id/text_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="5dp"
+                android:text="D"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_d"
+                app:layout_constraintStart_toEndOf="@+id/edt_d"
+                app:layout_constraintTop_toTopOf="@+id/edt_d" />
+
+            <EditText
+                android:id="@+id/edt_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_editext"
+                android:clickable="false"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:inputType="text"
+                android:focusable="false"
+                android:padding="10dip"
+                android:text="5"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_d"
+                app:layout_constraintStart_toEndOf="@+id/text_d"
+                app:layout_constraintTop_toTopOf="@+id/text_d" />
+
+            <TextView
+                android:id="@+id/text_u_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="5dp"
+                android:text="U"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_u"
+                app:layout_constraintStart_toEndOf="@+id/edt_u"
+                app:layout_constraintTop_toTopOf="@+id/edt_u" />
+
+            <TextView
+                android:id="@+id/text_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Respuesta: hay 1525 lapiceros."
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_u_last" />
+
+            <TextView
+                android:id="@+id/text_continua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/muli"
+                android:padding="10dp"
+                android:text="Representa la cantidad de plumones, borradores y tajadores que hay en el almacén usando el ábaco, en una hoja de papel."
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_respuesta" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Volver"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Siguiente"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="- Juego Terminado -"
+        android:textColor="#9A1818"
+        android:textSize="32sp"
+        android:fontFamily="@font/muli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="- Tu puntaje -"
+        android:layout_marginTop="15dp"
+        android:textColor="#9A1818"
+        android:textSize="25sp"
+        android:fontFamily="@font/muli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/FinalScoreTextView"
+        android:text="0/0"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/muli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+<!--        <Button
+            android:id="@+id/buttonPlayAgain"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF1B69"
+            android:text="Jugar de Nuevo"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_margin="10dp"
+            android:backgroundTint="#1189BF"
+            android:text="Volver"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
