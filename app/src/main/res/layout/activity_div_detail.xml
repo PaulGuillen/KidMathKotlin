@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".operations.settings.details.DivDetailActivity">
+    tools:context=".operations.settings.details.segmentthree.DivDetailActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -56,7 +56,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:fontFamily="@font/monserratalternates_regular"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:fontFamily="@font/muli"
             android:maxLines="3"
             android:text="Las divisiones son una operación matemática que consiste en ir repartiendo en partes iguales un total. Una división es una operación matemática básica diferente a la multiplicación dado que su función es conocer cuántas veces el divisor puede llegar al contenido en el dividendo"
             android:textAlignment="center"
@@ -71,14 +73,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="80dp" />
+            app:layout_constraintGuide_percent="0.5" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelinedos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_end="150dp" />
 
         <TextView
             android:id="@+id/textView"
@@ -211,16 +207,17 @@
             app:layout_constraintTop_toBottomOf="@+id/view_rayita_second" />
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/monserratalternates_bold"
             android:text="125 = Dividendo"
             android:textColor="@color/teal_200"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintStart_toStartOf="@id/guidelinedos"
-            app:layout_constraintTop_toTopOf="@+id/textView5" />
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="@id/guidelineuno"
+            app:layout_constraintStart_toStartOf="@id/guidelineuno" />
 
         <TextView
             android:id="@+id/textView11"
@@ -229,8 +226,9 @@
             android:fontFamily="@font/monserratalternates_bold"
             android:text="5 = Divisor"
             android:textColor="@color/orange_primary_dark"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@id/guidelinedos"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineuno"
+            app:layout_constraintStart_toStartOf="@id/guidelineuno"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <TextView
@@ -240,8 +238,9 @@
             android:fontFamily="@font/monserratalternates_bold"
             android:text="25 = Cociente"
             android:textColor="@color/red_primary_dark"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@id/guidelinedos"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineuno"
+            app:layout_constraintStart_toStartOf="@id/guidelineuno"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <TextView
@@ -251,8 +250,9 @@
             android:fontFamily="@font/monserratalternates_bold"
             android:text="0 = Residuo"
             android:textColor="@color/purple_primary_dark"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@id/guidelinedos"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineuno"
+            app:layout_constraintStart_toStartOf="@id/guidelineuno"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 
@@ -263,7 +263,7 @@
             android:layout_marginTop="25dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView9">
+            app:layout_constraintTop_toBottomOf="@id/textView13">
 
 
             <androidx.cardview.widget.CardView
@@ -283,6 +283,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Division \nExacta"
                         android:textAlignment="center" />
@@ -291,17 +292,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/monserratalternates_regular"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/muli"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
+                        android:textSize="17sp"
                         android:text="Una división exacta es aquella que cuando al resolver la división, el resultado del resto es igual a cero."
-                        android:textAlignment="center"
-                        android:textSize="15sp" />
+                        android:textAlignment="center" />
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="División de : 14/2"
                         android:textAlignment="center" />
@@ -309,6 +312,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Cociente : 7"
                         android:textAlignment="center" />
@@ -316,6 +320,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Residuo : 0"
                         android:textAlignment="center" />
@@ -342,6 +347,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Division \nInexacta"
                         android:textAlignment="center" />
@@ -351,8 +357,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
-                        android:fontFamily="@font/monserratalternates_regular"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/muli"
                         android:maxLines="4"
+                        android:textSize="17sp"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
                         android:text="En las divisiones inexactas la cifra del resto cuenta con un valor diferente a cero, es importante destacar que el resto debe ser menor que el divisor."
@@ -364,11 +372,13 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="División 19/2"
+                        android:textSize="17sp"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Cociente: 9"
                         android:textAlignment="center" />
@@ -376,6 +386,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="17sp"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:text="Residuo: 1"
                         android:textAlignment="center" />
@@ -391,15 +402,54 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/monserratalternates_bold"
-            app:layout_constraintTop_toBottomOf="@id/linearlayout_propiedad_uno"
+            android:padding="20dp"
             android:text="Puede ocurrir que la división no se pueda resolver porque el número que se formó en el resto es una cifra menor que el divisor."
             android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_bottom"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout_propiedad_uno" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Volver"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/muli"
+                android:text="Siguiente"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

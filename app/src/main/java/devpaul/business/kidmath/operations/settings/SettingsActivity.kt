@@ -19,6 +19,8 @@ import devpaul.business.kidmath.operations.settings.details.segmentone.CentenasA
 import devpaul.business.kidmath.operations.settings.details.segmentone.CompararCantidadesActivity
 import devpaul.business.kidmath.operations.settings.details.segmentone.DecimalDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmentone.ProblemsQuantityActivity
+import devpaul.business.kidmath.operations.settings.details.segmentthree.DivDetailActivity
+import devpaul.business.kidmath.operations.settings.details.segmentthree.FracDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmenttwo.CalculoMentalActivity
 import devpaul.business.kidmath.operations.settings.details.segmenttwo.MultDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmenttwo.ProblemasComparacionActivity
@@ -36,6 +38,12 @@ class SettingsActivity : AppCompatActivity() {
     var btncalculomental : Button ? = null
     var btnComparacion : Button ? = null
     var btnIgualacion : Button ? = null
+
+
+    var btnTeoriaDivision: Button ? = null
+    var btnFracciones: Button ? = null
+    var btnGameDetail: Button ? = null
+
 
     private lateinit var auth: FirebaseAuth
 
@@ -102,6 +110,26 @@ class SettingsActivity : AppCompatActivity() {
             val i = Intent(this, ProblemasIgualacionActivity::class.java)
             startActivity(i)
         }
+
+        btnTeoriaDivision = findViewById(R.id.btn_teoria_division)
+        btnTeoriaDivision?.setOnClickListener {
+            val i = Intent(this, DivDetailActivity::class.java)
+            startActivity(i)
+        }
+
+        btnFracciones = findViewById(R.id.btn_fracciones)
+        btnFracciones?.setOnClickListener {
+            val i = Intent(this, FracDetailActivity::class.java)
+            startActivity(i)
+        }
+
+        btnGameDetail = findViewById(R.id.btn_game_detail)
+        btnGameDetail?.setOnClickListener {
+            val i = Intent(this, GameDetailActivity::class.java)
+            startActivity(i)
+        }
+
+
     }
 
 }

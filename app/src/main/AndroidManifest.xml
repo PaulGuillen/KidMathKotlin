@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMath">
         <activity
+            android:name=".operations.settings.details.segmenttwo.MultiplosNumerosActivity"
+            android:exported="false" />
+        <activity
             android:name=".operations.settings.details.segmenttwo.ProblemasIgualacionActivity"
             android:exported="false" />
         <activity
@@ -43,10 +46,10 @@
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".operations.settings.details.DivDetailActivity"
+            android:name=".operations.settings.details.segmentthree.DivDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.FracDetailActivity"
+            android:name=".operations.settings.details.segmentthree.FracDetailActivity"
             android:exported="false" />
         <activity
             android:name=".operations.settings.details.segmenttwo.MultDetailActivity"

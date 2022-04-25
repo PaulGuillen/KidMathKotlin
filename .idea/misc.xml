@@ -31,7 +31,7 @@
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_decimal_detail.xml" value="0.18" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_div_detail.xml" value="0.25" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_div_game.xml" value="0.25" />
-        <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_frac_detail.xml" value="0.33" />
+        <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_frac_detail.xml" value="0.25" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_game_detail.xml" value="0.2359375" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_game_over.xml" value="0.3145833333333333" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_game_over_div.xml" value="0.33" />
@@ -44,6 +44,7 @@
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_mult_detail.xml" value="0.33" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_mult_game.xml" value="0.22" />
+        <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_multiplos_numeros.xml" value="0.3145833333333333" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_play.xml" value="0.33" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_problemas_comparacion.xml" value="0.33" />
         <entry key="..\:/Proyectos/ProyectosAndroidStudio/KidMath/app/src/main/res/layout/activity_problemas_igualacion.xml" value="0.3145833333333333" />
@@ -62,7 +63,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

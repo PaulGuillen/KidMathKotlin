@@ -346,35 +346,75 @@
                     android:backgroundTint="@color/light_green_primary"
                     android:fontFamily="@font/monserratalternates_bold"
                     android:padding="20dp"
-                    android:text="Segmento multiplicación"
+                    android:textSize="17sp"
+                    android:text="Interpretación \nde \nlos gráficos"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:textSize="17sp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/light_green_primary"
                     android:fontFamily="@font/monserratalternates_bold"
                     android:padding="20dp"
-                    android:text="Segmento Fracciones "
+                    android:text="Teória de \ncuerpos \ngeométricos"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
             </LinearLayout>
 
-            <Button
-                android:layout_width="wrap_content"
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/light_green_primary"
-                android:fontFamily="@font/monserratalternates_bold"
-                android:paddingStart="40dp"
-                android:paddingTop="20dp"
-                android:paddingEnd="40dp"
-                android:paddingBottom="20dp"
-                android:text="Segmento \nmultiplicación"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_teoria_division"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:paddingStart="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="40dp"
+                    android:textSize="17sp"
+                    android:paddingBottom="20dp"
+                    android:text="Teória \nde \ndivisión"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/btn_fracciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="17sp"
+                    android:text="Teória \nde \nfracciones"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
@@ -396,7 +436,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:backgroundTint="@color/light_green_primary"
+                android:backgroundTint="@color/blue_primary_dark"
                 android:fontFamily="@font/monserratalternates_bold"
                 android:padding="20dp"
                 android:text="Explicación del juego"
