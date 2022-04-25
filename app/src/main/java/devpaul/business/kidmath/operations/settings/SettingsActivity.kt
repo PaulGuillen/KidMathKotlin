@@ -21,10 +21,7 @@ import devpaul.business.kidmath.operations.settings.details.segmentone.DecimalDe
 import devpaul.business.kidmath.operations.settings.details.segmentone.ProblemsQuantityActivity
 import devpaul.business.kidmath.operations.settings.details.segmentthree.DivDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmentthree.FracDetailActivity
-import devpaul.business.kidmath.operations.settings.details.segmenttwo.CalculoMentalActivity
-import devpaul.business.kidmath.operations.settings.details.segmenttwo.MultDetailActivity
-import devpaul.business.kidmath.operations.settings.details.segmenttwo.ProblemasComparacionActivity
-import devpaul.business.kidmath.operations.settings.details.segmenttwo.ProblemasIgualacionActivity
+import devpaul.business.kidmath.operations.settings.details.segmenttwo.*
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -43,6 +40,8 @@ class SettingsActivity : AppCompatActivity() {
     var btnTeoriaDivision: Button ? = null
     var btnFracciones: Button ? = null
     var btnGameDetail: Button ? = null
+    var btnMultiplo: Button ? = null
+    var btnGrafico: Button ? = null
 
 
     private lateinit var auth: FirebaseAuth
@@ -126,6 +125,16 @@ class SettingsActivity : AppCompatActivity() {
         btnGameDetail = findViewById(R.id.btn_game_detail)
         btnGameDetail?.setOnClickListener {
             val i = Intent(this, GameDetailActivity::class.java)
+            startActivity(i)
+        }
+        btnMultiplo = findViewById(R.id.btnMultiplo)
+        btnMultiplo?.setOnClickListener {
+            val i = Intent(this, MultiplosNumerosActivity::class.java)
+            startActivity(i)
+        }
+        btnGrafico = findViewById(R.id.btnGrafico)
+        btnGrafico?.setOnClickListener {
+            val i = Intent(this, GraficoBarrasActivity::class.java)
             startActivity(i)
         }
 

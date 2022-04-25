@@ -8,7 +8,7 @@ import android.widget.TextView
 import cn.pedant.SweetAlert.SweetAlertDialog
 import devpaul.business.kidmath.R
 
-class MultiplosNumerosActivity : AppCompatActivity() {
+class GraficoBarrasActivity : AppCompatActivity() {
 
     var textDialog: TextView? = null
     var textBack: TextView? = null
@@ -16,7 +16,7 @@ class MultiplosNumerosActivity : AppCompatActivity() {
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_multiplos_numeros)
+        setContentView(R.layout.activity_grafico_barras)
 
         //desactivar rotacion pantalla
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -30,4 +30,5 @@ class MultiplosNumerosActivity : AppCompatActivity() {
             onBackPressed()
         }
     }
+
 }

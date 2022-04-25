@@ -247,6 +247,7 @@
                     android:textColor="@color/white" />
 
                 <Button
+                    android:id="@+id/btnMultiplo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -283,6 +284,7 @@
                     android:textColor="@color/white" />
 
                 <Button
+                    android:id="@+id/btnGrafico"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

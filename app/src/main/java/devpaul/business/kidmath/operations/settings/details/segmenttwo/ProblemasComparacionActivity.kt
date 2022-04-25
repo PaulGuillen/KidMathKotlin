@@ -14,9 +14,6 @@ class ProblemasComparacionActivity : AppCompatActivity() {
     var textDialog : TextView? = null
     var textBack : TextView? = null
 
-
-
-
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
