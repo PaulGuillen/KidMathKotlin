@@ -250,7 +250,7 @@
                 android:fontFamily="@font/muli"
                 android:layout_marginTop="20dp"
                 android:padding="10dp"
-                android:text="En estos dos gráficos podemos observar que la interpretación de los gráficos pueden variar de acuerdo a los modelos presentando, por ejemplo: en el primer gráfico se puede apreciar que el gráfico no va de forma rectamente horizontal, si no tiene subidas y bajadas, esto indica que el cuadro no es complemtamente uniforme, en el segundo grafico podemos apreciar que es un gráfico de pastel, el cual su leyenda muestra cantidades que pueden ser de fierentes objetos."
+                android:text="En estos dos gráficos podemos observar que la interpretación de los gráficos pueden variar de acuerdo a los modelos presentando, por ejemplo: en el primer gráfico se puede apreciar que el gráfico no va de forma rectamente horizontal, si no tiene subidas y bajadas, esto indica que el cuadro no es complemtamente uniforme, en el segundo grafico podemos apreciar que es un gráfico de pastel, el cual su leyenda muestra cantidades que pueden ser de diferentes objetos."
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold"
