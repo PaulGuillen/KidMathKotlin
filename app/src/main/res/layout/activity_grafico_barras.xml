@@ -83,6 +83,135 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.75" />
 
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/grafica"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_explicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="15dp"
+                android:text="En esta ocasión mostraremos un ejemplo de un gráfico de barras, el cual cuenta con datos solamente númericos, procedemos a explicar el cuadro."
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/grafica" />
+
+            <TextView
+                android:id="@+id/text_bottom_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="X"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/view_dos"
+                app:layout_constraintEnd_toEndOf="@+id/view_dos"
+                app:layout_constraintStart_toStartOf="@+id/view_dos" />
+
+            <TextView
+                android:id="@+id/text_bottom_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:layout_marginEnd="10dp"
+                android:text="Y"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/view_uno"
+                app:layout_constraintEnd_toStartOf="@+id/view_uno"
+                app:layout_constraintTop_toTopOf="@+id/view_uno" />
+
+            <View
+                android:layout_marginTop="50dp"
+                android:id="@+id/view_uno"
+                android:layout_width="4dp"
+                android:layout_marginEnd="80dp"
+                android:layout_height="150dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/text_explicacion" />
+
+            <View
+                android:id="@+id/view_dos"
+                android:layout_width="158dp"
+                android:layout_height="4dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/view_uno"
+                app:layout_constraintStart_toEndOf="@+id/view_uno" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/muli"
+                android:text="Barra color azul, como observamos la barra color azul muestra un resultado negativo, no obstante en el eje x se muestra un resultado negativo -1 esto indica que la barra azul tiene una conclusión opuesta a la positiva."
+                android:textColor="#042c64"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/text_bottom_x" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/muli"
+                android:text="Barra color verde, como observamos en esta barra muestra un resultado positivo, el cual es 5, se representa de esa forma ya que se hace la comparación con las otras barras en el mismo eje."
+                android:textColor="#3cd162"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/muli"
+                android:text="Barra color marrón, como observamos en estas gráficas sirven para comparar resultados, cantidades...etc, la cuestion es acoplar correctamente los datos del eje x , ejec y."
+                android:textColor="#bc5464 "
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+            <TextView
+                android:id="@+id/text_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:padding="15dp"
+                android:text="Un diagrama de barras se utiliza para representar datos cualitativos o datos cuantitativos de tipo discreto. Se representan sobre unos ejes de coordenadas, en el eje de abscisas se colocan los valores de la variable, y sobre el eje de ordenadas las frecuencias absolutas o relativas o acumuladas."
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_percent"
+                app:layout_constraintStart_toStartOf="@id/guideline_percent"
+                app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

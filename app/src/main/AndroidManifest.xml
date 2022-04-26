@@ -15,6 +15,9 @@
             android:name=".operations.settings.details.segmenttwo.GraficoBarrasActivity"
             android:exported="false" />
         <activity
+            android:name=".operations.settings.details.segmenttwo.GraficoBarrasActivity"
+            android:exported="false" />
+        <activity
             android:name=".operations.settings.details.segmenttwo.MultiplosNumerosActivity"
             android:exported="false" />
         <activity
