@@ -162,7 +162,7 @@
                         android:background="#424242"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:padding="30dp"
-                        android:text="Proyecto unviersitario | Realizado por Juan Surco"
+                        android:text="Proyecto unviersitario | Realizado por Paul Guillen"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="13sp"
