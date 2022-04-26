@@ -97,7 +97,7 @@
                     android:fontFamily="@font/monserratalternates_bold"
                     android:padding="20dp"
                     android:textSize="17sp"
-                    android:text="Problemas \nrepresentando \ncantidades"
+                    android:text="Problemas \nrepresentar \ncantidades"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 

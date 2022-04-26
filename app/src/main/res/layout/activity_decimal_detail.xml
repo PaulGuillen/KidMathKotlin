@@ -303,7 +303,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/monserratalternates_bold"
-                android:text="Centésima"
+                android:text="Milésima"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView8"
                 app:layout_constraintStart_toStartOf="@+id/view_right_bottom"
