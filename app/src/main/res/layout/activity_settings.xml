@@ -342,6 +342,7 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/btnInterpretacionGraficos"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -354,6 +355,7 @@
                     android:textColor="@color/white" />
 
                 <Button
+                    android:id="@+id/btnCuerposGeometrico"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textSize="17sp"

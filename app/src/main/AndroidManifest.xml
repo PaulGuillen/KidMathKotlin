@@ -12,11 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMath">
         <activity
-            android:name=".operations.settings.details.segmenttwo.GraficoBarrasActivity"
+            android:name=".operations.settings.details.segmentthree.CuerposGeometricoActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".operations.settings.details.segmentthree.InterpretacionGraficosActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".operations.settings.details.segmenttwo.GraficoBarrasActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
+
         <activity
             android:name=".operations.settings.details.segmenttwo.MultiplosNumerosActivity"
             android:exported="false" />

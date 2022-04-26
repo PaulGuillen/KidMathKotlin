@@ -19,8 +19,10 @@ import devpaul.business.kidmath.operations.settings.details.segmentone.CentenasA
 import devpaul.business.kidmath.operations.settings.details.segmentone.CompararCantidadesActivity
 import devpaul.business.kidmath.operations.settings.details.segmentone.DecimalDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmentone.ProblemsQuantityActivity
+import devpaul.business.kidmath.operations.settings.details.segmentthree.CuerposGeometricoActivity
 import devpaul.business.kidmath.operations.settings.details.segmentthree.DivDetailActivity
 import devpaul.business.kidmath.operations.settings.details.segmentthree.FracDetailActivity
+import devpaul.business.kidmath.operations.settings.details.segmentthree.InterpretacionGraficosActivity
 import devpaul.business.kidmath.operations.settings.details.segmenttwo.*
 
 class SettingsActivity : AppCompatActivity() {
@@ -42,7 +44,8 @@ class SettingsActivity : AppCompatActivity() {
     var btnGameDetail: Button ? = null
     var btnMultiplo: Button ? = null
     var btnGrafico: Button ? = null
-
+    var btnInterpretacionGraficos: Button ? = null
+    var btnCuerposGeometrico: Button ? = null
 
     private lateinit var auth: FirebaseAuth
 
@@ -137,7 +140,17 @@ class SettingsActivity : AppCompatActivity() {
             val i = Intent(this, GraficoBarrasActivity::class.java)
             startActivity(i)
         }
+        btnInterpretacionGraficos = findViewById(R.id.btnInterpretacionGraficos)
+        btnInterpretacionGraficos?.setOnClickListener {
+            val i = Intent(this, InterpretacionGraficosActivity::class.java)
+            startActivity(i)
+        }
 
+        btnCuerposGeometrico = findViewById(R.id.btnCuerposGeometrico)
+        btnCuerposGeometrico?.setOnClickListener {
+            val i = Intent(this, CuerposGeometricoActivity::class.java)
+            startActivity(i)
+        }
 
     }
 

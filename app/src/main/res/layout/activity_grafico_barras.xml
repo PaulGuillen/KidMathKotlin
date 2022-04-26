@@ -190,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/muli"
-                android:text="Barra color marrón, como observamos en estas gráficas sirven para comparar resultados, cantidades...etc, la cuestion es acoplar correctamente los datos del eje x , ejec y."
+                android:text="Barra color marrón, como observamos en estas gráficas sirven para comparar resultados, cantidades...etc, la cuestion es acoplar correctamente los datos del eje x , eje y."
                 android:textColor="#bc5464 "
                 android:textSize="17sp"
                 android:textStyle="bold"
