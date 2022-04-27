@@ -34,6 +34,10 @@ _Como se puede apreciar en las vistas, podemos observar las 4 primeras imagenes 
 
 ## Video 📄
 
+_En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas._
+
+https://user-images.githubusercontent.com/43099030/165583285-82186433-d41e-406d-872f-b5a701045dfd.mp4
+
 ## Autor ✒️
 
 * **Paul Guillen Acuña** - *Mi Repositorio* - [PaulGuillen](https://github.com/PaulGuillen?tab=repositories)
