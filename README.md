@@ -39,7 +39,7 @@ _Como se puede apreciar en las imagenes, se muestran las secuencias básicas de 
 
 ## Video 📄
 
-_En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas._
+_En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
 
 https://user-images.githubusercontent.com/43099030/165583285-82186433-d41e-406d-872f-b5a701045dfd.mp4
 
