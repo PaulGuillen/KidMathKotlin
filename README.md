@@ -3,7 +3,7 @@
 _En este proyecto la base es de un juego llamado "Piensa rapido", en el cual tendrá 4 operaciones básicas, suma , resta, multiplicación, división, ádemas cuenta como con una sección ajustes, el cual tiene varios temas de conocimiento para niños de 4to grado de primaria._
 
 ## Comenzando 🚀
-_Para comenzar debes tener en cuenta que este proyecto cuenta con dos partes, una para estudiantes y la otra para profores llamada [KidMathAdmin](https://github.com/PaulGuillen/KidMathAdmin)_
+_Para comenzar debes tener en cuenta que este proyecto cuenta con dos partes, una para estudiantes y la otra para profesores llamada [KidMathAdmin](https://github.com/PaulGuillen/KidMathAdmin)_
 
 _Tener en cuenta que el redimensionamiento de la app debe ser para tablets de 10 pulgadas y para celulares de gama baja._
 
@@ -11,12 +11,14 @@ _Tener en cuenta que el redimensionamiento de la app debe ser para tablets de 10
  <img src="https://i.postimg.cc/yx88xw0h/Redimensionamiento.png"/>
 </p>
 
+_Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets](https://developer.android.com/docs/quality-guidelines/tablet-app-quality?hl=es-419)_
 
-_                                                                                                      _
 
 ### Pre-requisitos 📋
 
 _Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore), conocimiento en graphview y demás gráficos_
+
+_Algo importante son los constraintlayout, la division de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
 
 ```
 . MinSdk =  23
