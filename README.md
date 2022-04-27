@@ -32,10 +32,8 @@ _Algo importante son los constraintlayout, la division de porcentajes de pantall
 _Como se puede apreciar en las vistas, podemos observar las 4 primeras imagenes muestran los resultados por alumno del juego "Piensa Rapido" de la aplicación Math4kids, en la última imagen se aprecia el listado de alumnos registrados en la aplicación MathKidAdmin_
 
 
+## Video 📄
+
 ## Autor ✒️
 
 * **Paul Guillen Acuña** - *Mi Repositorio* - [PaulGuillen](https://github.com/PaulGuillen?tab=repositories)
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
