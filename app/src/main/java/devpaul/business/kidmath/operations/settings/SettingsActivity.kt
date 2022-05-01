@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -63,6 +64,7 @@ class SettingsActivity : AppCompatActivity() {
         btnSalir?.setOnClickListener {
             auth.signOut()
             val i = Intent(this, LoginActivity::class.java)
+            Toast.makeText(this,"Gracias por visitarnos",Toast.LENGTH_LONG).show()
             i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK // Eliminar el historial de pantallas
             startActivity(i)
         }
