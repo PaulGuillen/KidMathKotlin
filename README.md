@@ -18,7 +18,7 @@ _Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets
 
 _Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore), conocimiento en graphview y demás gráficos_
 
-_Algo importante son los constraintlayout, la division de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
+_Algo importante son los constraintlayout, la división de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
 
 ```
 . MinSdk =  23
