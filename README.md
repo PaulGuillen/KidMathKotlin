@@ -1,6 +1,6 @@
 # Math4Kids
 
-_En este proyecto la base es de un juego llamado "Piensa rapido", en el cual tendrá 4 operaciones básicas, suma , resta, multiplicación, división, ádemas cuenta como con una sección ajustes, el cual tiene varios temas de conocimiento para niños de 4to grado de primaria._
+_En este proyecto la base es de un juego llamado "Piensa rápido", en el cual tendrá 4 operaciones básicas, suma , resta, multiplicación, división, ádemas cuenta como con una sección ajustes, el cual tiene varios temas de conocimiento para niños de 4to grado de primaria._
 
 ## Comenzando 🚀
 _Para comenzar debes tener en cuenta que este proyecto cuenta con dos partes, una para estudiantes y la otra para profesores llamada [KidMathAdmin](https://github.com/PaulGuillen/KidMathAdmin)_
@@ -18,7 +18,7 @@ _Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets
 
 _Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore), conocimiento en graphview y demás gráficos_
 
-_Algo importante son los constraintlayout, la division de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
+_Algo importante son los constraintlayout, la división de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
 
 ```
 . MinSdk =  23
