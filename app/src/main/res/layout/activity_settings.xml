@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context=".operations.settings.SettingsActivity">
+    tools:context=".dashboard.settings.SettingsActivity"
+    android:fillViewport="true">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.AppBarLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,456 +28,457 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:text="Matemática"
-                    android:textColor="@color/green_primary_dark"
-                    android:textSize="20sp" />
+                    android:fontFamily="@font/monserrat_alternates_medium"
+                    android:text="@string/matem_tica_para"
+                    android:textColor="@color/light_blue_primary_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:paddingStart="5dp"
-                    android:text="para niños"
+                    android:paddingStart="6dp"
+                    android:fontFamily="@font/monserrat_alternates_medium"
+                    android:text="@string/ni_os"
                     android:textColor="@color/color_primary_gray"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     android:textStyle="bold"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
+
 
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <View
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_inside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="30dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineuno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="110dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_margin="20dp"
-            android:background="#DFDFDF" />
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar"
+            app:strokeColor="@color/light_blue_primary_dark"
+            app:strokeWidth="2dp">
 
-        <TextView
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_dos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_cardview_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="80dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_corazon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:src="@drawable/corazon"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.90"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:paddingEnd="15dp"
+                        android:text="@string/texto_card_view"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        tools:ignore="RtlSymmetry" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_exclamacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearlayout_corazon">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:src="@drawable/exclamacion"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.90"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:text="@string/texto_exclamacion"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_check_uno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearlayout_exclamacion">
+
+                    <ImageView
+                        android:id="@+id/check"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:src="@drawable/ic_check_green"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.90"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:text="@string/texto_mantenimiento"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_check_dos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearlayout_check_uno">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:src="@drawable/ic_check_green"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.90"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:gravity="center_vertical"
+                        android:text="@string/soporte_desarollador"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:id="@+id/view_uno"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:background="#DFDFDF"
+            app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinedos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:text="Segmentos de aprendizaje"
-            android:textColor="@color/color_primary_gray"
-            android:textSize="18sp" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="380dp" />
 
+        <!--Mas-->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/mas"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:paddingStart="5dp"
-            android:text="Nivel 1"
-            android:textColor="@color/deep_orange_primary"
-            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="0.90"
+            android:fontFamily="@font/monserrat_alternates_medium"
+            android:paddingEnd="15dp"
+            android:text="@string/m_s"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineuno"
+            app:layout_constraintTop_toBottomOf="@id/view_uno"
             tools:ignore="RtlSymmetry" />
 
-        <LinearLayout
+        <!--ShareImage-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clinearlayout_share"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mas">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_uno_inside"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="110dp" />
 
-                <Button
-                    android:id="@+id/btn_problemas_cantidades"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/deep_orange_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Problemas \nrepresentar \ncantidades"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/btn_centenas"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="17sp"
-                    android:backgroundTint="@color/deep_orange_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Redondeo \na las \ncentenas"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_cero_inside"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="30dp" />
 
-                <Button
-                    android:id="@+id/comparar_cantidades"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="17sp"
-                    android:backgroundTint="@color/deep_orange_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Comparar \nordenar \ncantidades"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/viewSegmentDecimal"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="17sp"
-                    android:backgroundTint="@color/deep_orange_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Segmento \nde los \ndecimales"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_margin="20dp"
-            android:background="#DFDFDF" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:text="Segmentos de aprendizaje"
-            android:textColor="@color/color_primary_gray"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:paddingStart="5dp"
-            android:text="Nivel 2"
-            android:textColor="@color/cyan_primary_dark"
-            android:textSize="18sp"
-            tools:ignore="RtlSymmetry" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinedos_inside"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="381dp" />
 
-                <Button
-                    android:id="@+id/btn_multiplicacion"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Teoría \nde la \nmultiplicación"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_uno_inside"
+                app:layout_constraintStart_toStartOf="@+id/guideline_cero_inside"
+                app:layout_constraintTop_toTopOf="@+id/recomendar"
+                tools:ignore="ContentDescription" />
 
-                <Button
-                    android:id="@+id/btn_comparacion"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Problemas \nde \ncomparación"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnIgualacion"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Problemas \nde \nigualación"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/btnMultiplo"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="17sp"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Multiplos \nde \nnúmeros "
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btncalculomental"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Práctica\ncalculo\nmental"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/btnGrafico"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="17sp"
-                    android:backgroundTint="@color/cyan_primary_dark"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Gráficos \nde \nbarras"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_margin="20dp"
-            android:background="#DFDFDF" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:text="Segmentos de aprendizaje"
-            android:textColor="@color/color_primary_gray"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:paddingStart="5dp"
-            android:text="Nivel 3"
-            android:textColor="@color/light_green_primary"
-            android:textSize="18sp"
-            tools:ignore="RtlSymmetry" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnInterpretacionGraficos"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/light_green_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Interpretación \nde \nlos gráficos"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/btnCuerposGeometrico"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="17sp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/light_green_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:text="Teória de \ncuerpos \ngeométricos"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btn_teoria_division"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/light_green_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:paddingStart="40dp"
-                    android:paddingTop="20dp"
-                    android:paddingEnd="40dp"
-                    android:textSize="17sp"
-                    android:paddingBottom="20dp"
-                    android:text="Teória \nde \ndivisión"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-
-                <Button
-                    android:id="@+id/btn_fracciones"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/light_green_primary"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:padding="20dp"
-                    android:textSize="17sp"
-                    android:text="Teória \nde \nfracciones"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_margin="20dp"
-            android:background="#DFDFDF" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btn_game_detail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp"
-                android:backgroundTint="@color/blue_primary_dark"
-                android:fontFamily="@font/monserratalternates_bold"
-                android:padding="20dp"
-                android:text="Explicación del juego"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/btn_salir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp"
-                android:backgroundTint="@color/red_primary_dark"
-                android:fontFamily="@font/monserratalternates_bold"
-                android:padding="20dp"
-                android:text="Salir de la aplicación"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
-
-
+            <!--ShareText-->
             <TextView
-                android:id="@+id/tvName"
-                android:layout_width="match_parent"
+                android:id="@+id/recomendar"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="#424242"
-                android:fontFamily="@font/monserratalternates_bold"
-                android:padding="20dp"
-                android:text="Proyecto unviersitario | Realizado por Paul Guillen"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="13sp"
-                android:textStyle="bold" />
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.90"
+                android:fontFamily="@font/monserrat_alternates_medium"
+                android:paddingEnd="15dp"
+                android:text="@string/texto_recomendar"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@id/guideline_uno_inside"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
 
-        </LinearLayout>
+            <!--ShareTextBelow-->
+            <TextView
+                android:id="@+id/recomendar_lima_segura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.90"
+                android:fontFamily="@font/monserrat_alternates_medium"
+                android:text="@string/texto_seguro_recomendar"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@id/guideline_uno_inside"
+                app:layout_constraintTop_toBottomOf="@id/recomendar"
+                tools:ignore="RtlSymmetry" />
 
-    </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clinearlayout_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clinearlayout_share">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_terms_cero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="30dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_terms_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="110dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_terms_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="381dp" />
+
+            <!--TermImage-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_error"
+                app:layout_constraintBottom_toBottomOf="@+id/terminos_servicio"
+                app:layout_constraintEnd_toStartOf="@id/guideline_terms_uno"
+                app:layout_constraintStart_toStartOf="@id/guideline_terms_cero"
+                app:layout_constraintTop_toTopOf="@+id/terminos_servicio"
+                tools:ignore="ContentDescription" />
+
+            <!--TermText-->
+            <TextView
+                android:id="@+id/terminos_servicio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.90"
+                android:fontFamily="@font/monserrat_alternates_medium"
+                android:paddingEnd="15dp"
+                android:text="@string/terminos"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+
+                app:layout_constraintStart_toEndOf="@id/guideline_terms_uno"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clinearlayout_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clinearlayout_terms">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_policy_cero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="30dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_policy_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="110dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_policy_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="381dp" />
+
+            <!--PolicyImage-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_error"
+                app:layout_constraintBottom_toBottomOf="@+id/politicas_privacidad"
+                app:layout_constraintEnd_toStartOf="@id/guideline_policy_uno"
+                app:layout_constraintStart_toStartOf="@id/guideline_policy_cero"
+                app:layout_constraintTop_toTopOf="@+id/politicas_privacidad"
+                tools:ignore="ContentDescription" />
+
+            <!--PolicyText-->
+            <TextView
+                android:id="@+id/politicas_privacidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.90"
+                android:fontFamily="@font/monserrat_alternates_medium"
+                android:paddingEnd="25dp"
+                android:text="@string/politicas"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@id/guideline_policy_uno"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_dos"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="35dp"
+            android:background="#DFDFDF"
+            app:layout_constraintTop_toBottomOf="@id/clinearlayout_policy" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monserrat_alternates_medium"
+            android:padding="20dp"
+            android:paddingEnd="15dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/version_control"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_dos"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </ScrollView>

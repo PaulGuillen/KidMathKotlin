@@ -12,36 +12,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMath">
         <activity
-            android:name=".operations.settings.details.segmentthree.CuerposGeometricoActivity"
+            android:name=".dashboard.profile.PerfilActivity"
+            android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmentthree.InterpretacionGraficosActivity"
+            android:name=".dashboard.news.NewsGameActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmenttwo.GraficoBarrasActivity"
+            android:name=".dashboard.settings.SettingsActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
-
         <activity
-            android:name=".operations.settings.details.segmenttwo.MultiplosNumerosActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentthree.CuerposGeometricoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentthree.InterpretacionGraficosActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.GraficoBarrasActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.MultiplosNumerosActivity"
+            android:windowSoftInputMode="stateHidden"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmenttwo.ProblemasIgualacionActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.ProblemasIgualacionActivity"
+            android:windowSoftInputMode="stateHidden"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmenttwo.ProblemasComparacionActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.ProblemasComparacionActivity"
+            android:windowSoftInputMode="stateHidden"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmenttwo.CalculoMentalActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.CalculoMentalActivity"
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".operations.settings.details.segmentone.CompararCantidadesActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentone.CompararCantidadesActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmentone.CentenasActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentone.CentenasActivity"
             android:exported="false" />
         <activity
             android:name=".login.RegisterActivity"
@@ -52,53 +67,53 @@
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".operations.settings.details.segmentone.DecimalDetailActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentone.DecimalDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmentone.ProblemsQuantityActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentone.ProblemsQuantityActivity"
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".operations.settings.details.segmentthree.DivDetailActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentthree.DivDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmentthree.FracDetailActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmentthree.FracDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.segmenttwo.MultDetailActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.segmenttwo.MultDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.details.GameDetailActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.details.GameDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.settings.SettingsActivity"
+            android:name="devpaul.business.kidmath.dashboard.theory.TheoryActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.div.DivGameActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.div.DivGameActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.mult.MultGameActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.mult.MultGameActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.sum.GameOverSumaActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.sum.GameOverSumaActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.rest.GameOverRestaActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.rest.GameOverRestaActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.div.GameOverDivisionActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.div.GameOverDivisionActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.mult.GameOverMultiplicacionActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.mult.GameOverMultiplicacionActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.sum.SumGameActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.sum.SumGameActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.rest.RestGameActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.rest.RestGameActivity"
             android:exported="false" />
         <activity
-            android:name=".operations.level.LevelActivity"
+            android:name="devpaul.business.kidmath.dashboard.operations.level.LevelActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

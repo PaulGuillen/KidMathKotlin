@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo_new"
+            android:fontFamily="@font/monserrat_alternates_medium"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:text="@string/titulo_noticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="#DFDFDF"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
+
+        <ImageView
+            android:id="@+id/view_img"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/childrens"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:background="#DFDFDF"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:id="@+id/description_new"
+            android:fontFamily="@font/monserrat_alternates_medium"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="@string/descripcion_de_la_noticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/fecha_new"
+            android:fontFamily="@font/monserrat_alternates_medium"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:gravity="end"
+            android:text="@string/fecha_de_la_noticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

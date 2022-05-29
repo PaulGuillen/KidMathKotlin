@@ -10,10 +10,8 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -93,6 +91,7 @@ class RegisterActivity : AppCompatActivity() {
         ) {
 
             val user = User(
+                userId = "",
                 name = name,
                 lastname = lastname,
                 rol = rol,
@@ -100,8 +99,12 @@ class RegisterActivity : AppCompatActivity() {
                 password = password
             )
 
+
+            val randomUUID = UUID.randomUUID().toString()
+
             progressDialog!!.show()
             progressDialog?.setContentView(R.layout.charge_dialog)
+
             Objects.requireNonNull(progressDialog!!.window)?.setBackgroundDrawableResource(android.R.color.transparent)
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -111,9 +114,14 @@ class RegisterActivity : AppCompatActivity() {
                                 .document(uid)
                                 .set(user)
                                 .addOnSuccessListener {
+                                    progressDialog?.dismiss()
                                     Toast.makeText(baseContext, "Registro exitoso", Toast.LENGTH_SHORT).show()
                                     goToLoginActivity()
-                                    progressDialog?.dismiss()
+                                    val usesRef = db.collection("Users").document(auth.uid!!)
+                                    usesRef
+                                        .update("userId", auth.uid)
+                                        .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully updated!") }
+                                        .addOnFailureListener { e -> Log.w(TAG, "Error updating document", e) }
                                 }
                                 .addOnFailureListener { e ->
                                     progressDialog?.dismiss()

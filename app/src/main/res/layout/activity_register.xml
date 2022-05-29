@@ -23,18 +23,18 @@
             android:background="@color/white"
             android:orientation="vertical">
 
-
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="280dp"
                 android:padding="40dp"
-                android:src="@drawable/first_view" />
-
+                android:src="@drawable/first_view"
+                tools:ignore="ContentDescription" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 app:cardBackgroundColor="@color/white"
@@ -47,17 +47,17 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_margin="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
 
                         <ImageView
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_exclamation"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_exclamation"
                             tools:ignore="ContentDescription" />
 
                         <TextView
@@ -65,9 +65,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/monserratalternates_regular"
-                            android:textStyle="bold"
                             android:text="@string/texto_registro"
-                            android:textAlignment="center" />
+                            android:textAlignment="center"
+                            android:textSize="29sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -82,16 +83,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="30dp"
-                        android:textColorHint="@color/black"
                         android:layout_marginEnd="25dp"
                         android:background="@drawable/custom_editext_rounded"
                         android:drawableStart="@drawable/ic_person"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/monserratalternates_regular"
-                        android:hint="Nombre"
+                        android:hint="@string/nombre"
                         android:inputType="textPersonName"
-                        android:padding="15dp"
-                        android:textSize="16sp"
+                        android:padding="25dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="27sp"
                         tools:ignore="Autofill,TextContrastCheck" />
 
                     <EditText
@@ -105,11 +106,11 @@
                         android:drawableStart="@drawable/ic_person"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/monserratalternates_regular"
-                        android:hint="Apellido"
-                        android:textColorHint="@color/black"
+                        android:hint="@string/apellido"
                         android:inputType="textPersonName"
-                        android:padding="15dp"
-                        android:textSize="16sp"
+                        android:padding="25dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="27sp"
                         tools:ignore="Autofill,TextContrastCheck" />
 
                     <EditText
@@ -122,12 +123,12 @@
                         android:background="@drawable/custom_editext_rounded"
                         android:drawableStart="@drawable/ic_email"
                         android:drawablePadding="10dp"
-                        android:textColorHint="@color/black"
                         android:fontFamily="@font/monserratalternates_regular"
-                        android:hint="Correo"
+                        android:hint="@string/correo"
                         android:inputType="textEmailAddress"
-                        android:padding="15dp"
-                        android:textSize="16sp"
+                        android:padding="25dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="27sp"
                         tools:ignore="Autofill" />
 
                     <EditText
@@ -140,12 +141,12 @@
                         android:background="@drawable/custom_editext_rounded"
                         android:drawableStart="@drawable/ic_lock"
                         android:drawablePadding="10dp"
-                        android:textColorHint="@color/black"
                         android:fontFamily="@font/monserratalternates_regular"
-                        android:hint="Contraseña"
+                        android:hint="@string/contrase_a"
                         android:inputType="textPassword"
-                        android:padding="15dp"
-                        android:textSize="16sp"
+                        android:padding="25dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="27sp"
                         tools:ignore="Autofill,TextContrastCheck" />
 
                     <EditText
@@ -158,12 +159,12 @@
                         android:background="@drawable/custom_editext_rounded"
                         android:drawableStart="@drawable/ic_lock"
                         android:drawablePadding="10dp"
-                        android:textColorHint="@color/black"
                         android:fontFamily="@font/monserratalternates_regular"
-                        android:hint="Confirmar Contraseña"
+                        android:hint="@string/confirmar_contrase_a"
                         android:inputType="textPassword"
-                        android:padding="15dp"
-                        android:textSize="16sp"
+                        android:padding="25dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="27sp"
                         tools:ignore="Autofill,TextContrastCheck" />
 
                     <Button
@@ -175,11 +176,10 @@
                         android:background="@color/red_primary_dark"
                         android:fontFamily="@font/monserratalternates_bold"
                         android:padding="20dp"
-                        android:text="Registrarme"
+                        android:text="@string/registrarme"
                         android:textAllCaps="false"
-                        android:textColor="@color/white" />
-
-
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -193,8 +193,7 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@drawable/ic_arrow"
-                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                            />
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -202,7 +201,8 @@
                             android:layout_marginStart="10dp"
                             android:fontFamily="@font/monserratalternates_bold"
                             android:gravity="center_vertical"
-                            android:text="Ya tienes una cuenta?" />
+                            android:text="@string/ya_tienes_una_cuenta"
+                            android:textSize="27sp" />
 
 
                     </LinearLayout>
@@ -214,9 +214,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 android:gravity="bottom"
-                android:layout_height="match_parent">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tvName"
@@ -225,11 +225,11 @@
                     android:background="#424242"
                     android:fontFamily="@font/monserratalternates_bold"
                     android:padding="20dp"
+                    android:text="@string/proyecto_unviersitario_realizado_por_juan_surco"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
-                    android:text="Proyecto unviersitario | Realizado por Juan Surco" />
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 

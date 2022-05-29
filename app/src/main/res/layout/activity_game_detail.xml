@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:fillViewport="true"
-    tools:context=".operations.settings.details.GameDetailActivity">
+    tools:context=".dashboard.theory.details.GameDetailActivity">
 
     <LinearLayout
         android:orientation="vertical"

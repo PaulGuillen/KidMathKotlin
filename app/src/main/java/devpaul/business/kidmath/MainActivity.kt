@@ -104,7 +104,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     private fun setWindowFlag(bits: Int, on: Boolean) {
         val win = window
         val winParams = win.attributes

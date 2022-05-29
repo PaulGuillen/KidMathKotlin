@@ -1,120 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".operations.mult.GameOverMultiplicacionActivity">
+    android:fillViewport="true"
+    tools:context=".dashboard.operations.mult.GameOverMultiplicacionActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/ibRestart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/restart"
-            android:onClick="restart"/>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/ibExit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/exit"
-            android:onClick="exit"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/ivHighScore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:srcCompat="@drawable/high_score" />
+        android:padding="16dp"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/linearlayout_topbar"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
+            <ImageButton
+                android:id="@+id/ibRestart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Puntaje: "
-                android:fontFamily="@font/muli"
-                android:layout_gravity="center_vertical"
-                android:textSize="18sp" />
+                android:background="@drawable/restart"
+                android:onClick="restart"
+                tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/tvPoints"
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/ibExit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score"
-                android:textAlignment="center"
-                android:fontFamily="@font/muli"
-                android:textColor="@android:color/holo_green_light"
-                android:textSize="60sp" />
+                android:background="@drawable/exit"
+                android:onClick="exit"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_topbar"
+            tools:layout_editor_absoluteX="16dp">
 
-
-            <TextView
-                android:id="@+id/textView3"
+            <ImageView
+                android:id="@+id/ivHighScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/muli"
-                android:text="Mejor puntaje personal: "
-                android:textSize="18sp"/>
+                android:visibility="gone"
+                app:srcCompat="@drawable/high_score"
+                tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/tvHighScore"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="best"
-                android:fontFamily="@font/muli"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/puntaje"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/mejor_puntaje_personal"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvHighScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/best"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/game_over"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/apellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apellido"
+                android:visibility="gone" />
+
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/game_over" />
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/nombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:text="Nombre" />
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/muli"
+                android:padding="20dp"
+                android:text="@string/siguiente_nivel"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/apellido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:text="Apellido" />
 
-    </LinearLayout>
-</LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

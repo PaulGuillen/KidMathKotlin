@@ -1,6 +1,7 @@
 package devpaul.business.kidmath.model
 
 class User(
+    var userId: String? = null,
     var name: String,
     var lastname: String,
     var rol: String? = null,

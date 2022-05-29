@@ -1,166 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".operations.level.LevelActivity">
+    tools:context=".dashboard.operations.level.LevelActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_1"
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:gravity="center"
-            android:background="@drawable/ending"
-            android:fontFamily="@font/muli"
-            android:text="Ejercita tu mente\n con Matemáticas"
-            android:textColor="#03447D"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/yellow_primary_dark"
-                    android:padding="40dp"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:text="Level \n 1 "
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:padding="40dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/app_green_dark"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:textColor="@color/white"
-                    android:text="Level \n 2 "
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/pink_primary_dark"
-                    android:padding="40dp"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:text="Level \n 3 "
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:padding="40dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/app_blue_dark"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:textColor="@color/white"
-                    android:text="Level \n 4 "
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/purple_primary"
-                    android:padding="40dp"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:text="Level \n 5 "
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:padding="40dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/deep_orange_primary"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/monserratalternates_bold"
-                    android:textColor="@color/white"
-                    android:text="Level \n 6 "
-                    android:textSize="25sp"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom"
         android:layout_height="match_parent">
 
-        <TextView
-            android:text="Gracias por participar en este proyecto para niños"
-            android:fontFamily="@font/monserratalternates_bold"
-            android:padding="20dp"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:theme="@style/ActionBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserrat_alternates_medium"
+                    android:text="@string/niveles_del"
+                    android:textColor="@color/light_blue_primary_dark"
+                    android:textSize="25sp" />
 
-</ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserrat_alternates_medium"
+                    android:paddingStart="5dp"
+                    android:text="@string/juego"
+                    android:textColor="@color/color_primary_gray"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btn_volver_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/blue_light_primary"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/monserrat_alternates_medium"
+                    android:padding="10dp"
+                    android:text="@string/volver_nal_men"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/cut_card_level"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_facil"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/facil"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:padding="5dp"
+                        android:text="@string/f_cil"
+                        android:textAlignment="center"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_intermedio"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/intermedio"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:padding="5dp"
+                        android:text="@string/intermedio"
+                        android:textAlignment="center"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_avanzado"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/avanzado"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:padding="5dp"
+                        android:text="@string/avanzado"
+                        android:textAlignment="center"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_experto"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/experto"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monserrat_alternates_medium"
+                        android:padding="5dp"
+                        android:text="@string/experto"
+                        android:textAlignment="center"
+                        android:textSize="29sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

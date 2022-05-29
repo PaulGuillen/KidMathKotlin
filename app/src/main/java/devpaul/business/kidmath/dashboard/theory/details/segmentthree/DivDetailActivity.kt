@@ -1,0 +1,30 @@
+package devpaul.business.kidmath.dashboard.theory.details.segmentthree
+
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.TextView
+import cn.pedant.SweetAlert.SweetAlertDialog
+import devpaul.business.kidmath.R
+
+class DivDetailActivity : AppCompatActivity() {
+
+
+    var textBack : TextView? = null
+
+    @SuppressLint("SourceLockedOrientationActivity")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_div_detail)
+
+        //desactivar rotacion pantalla
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
+
+        textBack = findViewById(R.id.text_back)
+        textBack?.setOnClickListener {
+            onBackPressed()
+        }
+    }
+}

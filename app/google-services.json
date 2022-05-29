@@ -41,6 +41,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522375950767:android:f33febce02c5436a947f5a",
+        "android_client_info": {
+          "package_name": "devpaul.business.kidmathadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522375950767-cric0r3uvtf5o1btd10uv3ttih1hud7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "devpaul.business.kidmathadmin",
+            "certificate_hash": "75456fe498b5292c6439d4f1407b8c869b9292c9"
+          }
+        },
+        {
+          "client_id": "522375950767-u568gcsqv4nuoctvqb87lbb319gmtb3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDtoz_2j82fyvaHI9yEMHT_Myiy0ZZQxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522375950767-u568gcsqv4nuoctvqb87lbb319gmtb3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
