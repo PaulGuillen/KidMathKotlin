@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".dashboard.theory.TheoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ActionBarStyle">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:text="@string/matem_tica"
+                    android:textColor="@color/light_blue_primary_dark"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:paddingStart="5dp"
+                    android:text="@string/para_ni_os"
+                    android:textColor="@color/color_primary_gray"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="20dp"
+            android:background="#DFDFDF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:text="@string/segmentos_de_aprendizaje"
+            android:textColor="@color/color_primary_gray"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:paddingStart="5dp"
+            android:text="@string/nivel_1"
+            android:textColor="@color/deep_orange_primary"
+            android:textSize="23sp"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_problemas_cantidades"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/deep_orange_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/problemas_nrepresentar_ncantidades"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_centenas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/deep_orange_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:text="@string/redondeo_na_las_ncentenas"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/comparar_cantidades"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/deep_orange_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:text="@string/comparar_nordenar_ncantidades"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/viewSegmentDecimal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/deep_orange_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:text="@string/segmento_nde_los_ndecimales"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="20dp"
+            android:background="#DFDFDF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:text="@string/segmentos_de_aprendizaje"
+            android:textColor="@color/color_primary_gray"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:paddingStart="5dp"
+            android:text="@string/nivel_2"
+            android:textColor="@color/cyan_primary_dark"
+            android:textSize="23sp"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_multiplicacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/teor_a_nde_la_nmultiplicaci_n"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btn_comparacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/problemas_nde_ncomparaci_n"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnIgualacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/problemas_nde_nigualaci_n"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnMultiplo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/multiplos_nde_nn_meros"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btncalculomental"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/pr_ctica_ncalculo_nmental"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnGrafico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/cyan_primary_dark"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/gr_ficos_nde_nbarras"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="20dp"
+            android:background="#DFDFDF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:text="@string/segmentos_de_aprendizaje"
+            android:textColor="@color/color_primary_gray"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monserratalternates_bold"
+            android:paddingStart="5dp"
+            android:text="@string/nivel_3"
+            android:textColor="@color/light_green_primary"
+            android:textSize="23sp"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <Button
+                    android:id="@+id/btnInterpretacionGraficos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/interpretaci_n_nde_nlos_gr_ficos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnCuerposGeometrico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:text="@string/te_ria_de_ncuerpos_ngeom_tricos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <Button
+                    android:id="@+id/btn_teoria_division"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:paddingStart="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="40dp"
+                    android:textSize="20sp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/te_ria_nde_ndivisi_n"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+
+                <Button
+                    android:id="@+id/btn_fracciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_green_primary"
+                    android:fontFamily="@font/monserratalternates_bold"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/te_ria_nde_nfracciones"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="20dp"
+            android:background="#DFDFDF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_game_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="@color/blue_primary_dark"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="30dp"
+                android:textSize="22sp"
+                android:text="@string/explicaci_n_del_juego"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+   <!--         <Button
+                android:id="@+id/btn_salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textSize="20sp"
+                android:backgroundTint="@color/red_primary_dark"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="20dp"
+                android:text="@string/salir_de_la_aplicaci_n"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+-->
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:fontFamily="@font/monserratalternates_bold"
+                android:padding="20dp"
+                android:text="@string/proyecto_unviersitario_realizado_por_juan_surco"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
