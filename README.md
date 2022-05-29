@@ -1,6 +1,6 @@
 # Math4Kids
 
-_Este proyecto es la base de un juego llamado "Piensa rápido", el cual cuenta con operaciones báscias de suma, resta, multiplicación y división, también cuenta con  niveles, los cuales pueden ser "Fácil, Intermedio, Avanzado y Experto", este juego esta enfocado a niños de 3er y 4to año de primaria, especificamente es una relacion de salon de clases con grupo de alumnos, en el cual el profesor puede medir el rendimiento de sus alumnos en operaciones básicas desde una app aparte [MathKidAdmin](https://github.com/PaulGuillen/KidMathAdmin)._
+_Este proyecto es la base de un juego llamado "Piensa rápido", el cual cuenta con operaciones báscias de suma, resta, multiplicación y división, también cuenta con  niveles, los cuales pueden ser "Fácil, Intermedio, Avanzado y Experto", este juego esta enfocado para los niños de 3er y 4to año de primaria, especificamente es una relacion de salon de clases con grupo de alumnos, en el cual el profesor puede medir el rendimiento de sus alumnos en operaciones básicas desde una app aparte [MathKidAdmin](https://github.com/PaulGuillen/KidMathAdmin)._
 
 ## Comenzando 🚀
 _Para comenzar debes tener en cuenta que este proyecto cuenta con dos partes, una para estudiantes y la otra para profesores llamada [KidMathAdmin](https://github.com/PaulGuillen/KidMathAdmin)_
