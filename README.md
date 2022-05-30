@@ -49,7 +49,7 @@ _Estas son las capturas de patnalla en la cual mostramos la secuencia para llega
 
 _**Registro usuario**_
 
-_En esta parte vemos que usaremos el usuario test, en el cual esta en la parte inferior de este texto, vemos como el menú principal cuenta con varias secciones, el que vemos en la tercera posición de la imagen que es el perfil confirmando el usuario registrado con sus datos, vemos que el usuario aun no ha jugado ninguna operación por eso el puntaje es de cero._
+_En esta parte vemos que usaremos el usuario test, en el cual esta en la parte inferior de este texto, vemos como el menú principal cuenta con varias secciones, el que vemos en la tercera posición de la imagen que es el perfil confirmando el usuario registrado con sus datos, vemos que el usuario aún no ha jugado ninguna operación por eso el puntaje es de cero._
 
 ```
 . Correo =  usertest@gmail.com
