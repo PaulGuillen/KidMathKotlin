@@ -60,7 +60,7 @@ class NewsGameActivity : AppCompatActivity() {
         progressDialog!!.show()
         progressDialog?.setContentView(R.layout.charge_dialog)
         Objects.requireNonNull(progressDialog!!.window)?.setBackgroundDrawableResource(android.R.color.transparent)
-        db.collection(Constants.PATH_NEWS).orderBy("fecha", Query.Direction.ASCENDING)
+        db.collection(Constants.PATH_NEWS).orderBy("fecha", Query.Direction.DESCENDING)
             .addSnapshotListener { value, error ->
                 if (value?.isEmpty!!){
                     progressDialog?.dismiss()
