@@ -93,6 +93,16 @@ _Como vemos es lo mismo que suma y restas, lo diferente es en la tercera imagen 
 
 ---
 
+_**Sección Noticias**_
+
+_En esta sección aplicaremos validacion en firestore, ya que es importante saber si la información existe o no, así que vemos en la segunda imagen que las noticias publicadas estan en orden del mas actual, pero que pasaría si no existe ni una noticia en la base de datos, entonces mostramos el mensaje de la tercera imagen._
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171055179-97eafbca-2075-4da1-abd7-19768cc88e5d.png"/>
+</p>
+
+---
+
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
