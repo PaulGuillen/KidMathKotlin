@@ -78,6 +78,14 @@ _Como vemos es lo mismo que suma, lo diferente es en la tercera imagen que muest
  <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
 </p>
 
+_**Proceso Multiplicación**_
+
+_Como vemos es lo mismo que suma y restas, lo diferente es en la tercera imagen que muestra como se guarda el tipo de operación con su respectivo nivel seleccionado previamente._
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
+</p>
+
 
 ## Video 📄
 
