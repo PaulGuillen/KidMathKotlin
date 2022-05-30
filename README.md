@@ -136,7 +136,7 @@ _Observamos que tiene información de la aplicación movil, también se observa 
 
 ## Video 📄
 
-_En este video se mostrará las funcionalidades_
+_En este video se mostrará las funcionalidades._
 
 
 ## Autor ✒️
