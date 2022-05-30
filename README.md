@@ -45,6 +45,16 @@ _Estas son las capturas de patnalla en la cual mostramos la secuencia para llega
  <img src="https://user-images.githubusercontent.com/43099030/171042820-02caab30-b5ce-48c7-9ea5-ae3d151ef528.png"/>
 </p>
 
+---
+
+_**Registro usuario**_
+
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171043088-eaf6a13c-971d-44b2-a16b-57671023c6a1.png"/>
+</p>
+
+
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
