@@ -38,9 +38,7 @@ _Algo importante son los constraintlayout, la división de porcentajes de pantal
 _Como se puede apreciar en las imagenes, se muestran las secuencias básicas de cada segmento de la aplicación Math4Kids, desde el "OnBoarding" hasta los segmentos de teoría estudiantil para los niños de 4to de primaria._
 
 <p align="center">
- <img src="https://i.postimg.cc/XJsX3Vtc/vista-math4kids-uno.png"/>
- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ0ulHXKDfiyYC40qrWu7X4YANwKf5HjXPbLIH5VJippMvAZLwL-CmkCEEaBESmFPT93pb94QZknrlwpDXt_W3kZRBGtSNaTxQIdKiC1K1fYNSHL_m7G9nUA6N_ks7jQrqbVN-dZ7chM9ME97L6wjABUmKNKSVxv1mrqFOjSJmjO4NsCpkaS0ZSdqd/s1433/vista_math4kids_dos.png"/>
- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOADRK8zpctgWdP-7rL48kuDQyFbevwq7gmWer_ax-4wC6I6aZI2sOT_TNTciIMROZlTfdOYD56Y_PDFMJu8AM5qiIhEflU6EpAy5Mu6VknvN_3zIP2R8y64ya-REkBKRgjDoxUAd26y6ouHMU0wQa1Xg5IwYCSScRGUBzAgqxBGHjaTdaUta5GPqc/w1475-h732/vista_math4kids_tres.png"/>
+
 </p>
 
 ## Video 📄
