@@ -112,6 +112,17 @@ _Como podemos apreciar podemos observar en las imagenes, que se dividen en segme
 </p>
 
 ---
+
+_**Sección Perfil**_
+
+_Iniciamos desde el dashboard, como estudiante tenemos que ver nuestros scores y nuestros datos personales, en las imagenes se ven que hay 4 botones los cuales muestran el utlimo puntaje que has jugado, ádemas de ver tu correo, contraseña y la última vez que has jugado._
+
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171059650-7d0ded2d-95e1-4ea6-9f47-e0073ea31965.png"/>
+</p>
+
+---
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
