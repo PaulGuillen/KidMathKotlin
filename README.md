@@ -61,6 +61,15 @@ _En esta parte vemos que usaremos el usuario test, en el cual esta en la parte i
 </p>
 
 
+_**Proceso Suma**_
+
+_En esta imagen vemos que la operación suma, tiene cuatro niveles de fácil hasta a experto, el nivel seleccionado fue el intermedio en el cual tiene un contador de 60 segundos y un puntaje en la parte superior de la segunda imagen, cuando el tiempo termine se muestra el puntaje y su mejor puntaje personal con sharedpreferences, ádemas de contar un boton de ir al siguiente nivel directamente y en la última imagen vemos el resultado en firestore con sus respectivos campos._
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171049106-d0f2059f-c9bf-4f51-a38c-58b75e5b1d05.png"/>
+</p>
+
+
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
