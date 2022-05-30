@@ -3,12 +3,18 @@
 _Este proyecto es la base de un juego llamado "Piensa rápido", el cual cuenta con operaciones báscias de suma, resta, multiplicación y división, también cuenta con  niveles, los cuales pueden ser "Fácil, Intermedio, Avanzado y Experto", este juego esta enfocado para los niños de 3er y 4to año de primaria, especificamente es una relacion de un salon de clases con su grupo de alumnos, en el cual el profesor puede medir el rendimiento de sus alumnos en operaciones básicas desde una app aparte  llamada [MathKidAdmin](https://github.com/PaulGuillen/KidMathAdmin)._
 
 ## Comenzando 🚀
-_Para comenzar debes tener en cuenta que este proyecto cuenta con dos partes, una para estudiantes y la otra para profesores llamada [KidMathAdmin](https://github.com/PaulGuillen/KidMathAdmin)_
 
-_Tener en cuenta que el redimensionamiento de la app debe ser para tablets de 10 pulgadas y para celulares de gama baja._
+_Para comenzar debes tener en cuenta que esta aplicación esta solamente esta renderizada para tablets, así que procederemos a ver el especificamiento de la tablet._
+
+```
+. API level = 27.
+. Resolución = 2560 x 1600.
+. Nombre del dispositivo  = Nexus 10.
+. Retrato = Solamente renderizado para vertical, portrait horizontal desactivado.
+```
 
 <p align="center">
- <img src="https://i.postimg.cc/yx88xw0h/Redimensionamiento.png"/>
+ <img src="https://user-images.githubusercontent.com/43099030/170897222-8c45aca7-cbd8-4a36-a957-b161a21e5c35.png"/>
 </p>
 
 _Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets](https://developer.android.com/docs/quality-guidelines/tablet-app-quality?hl=es-419)_
