@@ -19,12 +19,12 @@ _Para comenzar debes tener en cuenta que esta aplicación esta solamente esta re
 
 _Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets](https://developer.android.com/docs/quality-guidelines/tablet-app-quality?hl=es-419)_
 
+_Algo importante son los constraintlayout, la división de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
+
 
 ### Pre-requisitos 📋
 
 _Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore-database-storage)_
-
-_Algo importante son los constraintlayout, la división de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
 
 ```
 . MinSdk =  23
@@ -35,17 +35,20 @@ _Algo importante son los constraintlayout, la división de porcentajes de pantal
 
 ## Ejecutando los diseños ⚙️
 
-_Como se puede apreciar en las imagenes, se muestran las secuencias básicas de cada segmento de la aplicación Math4Kids, desde el "OnBoarding" hasta los segmentos de teoría estudiantil para los niños de 4to de primaria._
+_En esta etapa mostraremos el flujo de la app con capturas de pantalla de la misma app.
+
+_**Onboarding App**_
+
+_Estas son las capturas de patnalla en la cual mostramos la secuencia para llegar al incio de sesión, esta secuencia solo se mostrará una sola vez, ya que utilizamos SharedPreferences para ejecurtalo una única vez._
 
 <p align="center">
-
+ <img src="https://user-images.githubusercontent.com/43099030/171041468-3a2914c2-b572-46ce-a8b6-8619c79582d0.png"/>
 </p>
 
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
 
-https://user-images.githubusercontent.com/43099030/165583285-82186433-d41e-406d-872f-b5a701045dfd.mp4
 
 ## Autor ✒️
 
