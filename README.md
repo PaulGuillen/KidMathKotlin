@@ -123,9 +123,20 @@ _Iniciamos desde el dashboard, como estudiante tenemos que ver nuestros scores y
 </p>
 
 ---
+
+_**Sección Ajustes**_
+
+_Observamos que tiene información de la aplicación movil, también se observa 3 opcione, la de Reocmendar a un amigo esta opción no esta habilitada ya que la aplicación aun no esta en producción osea en Play Store, los terminos de servicio y políticas son paginas que muestran los detalles de la pp.._
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171061912-e9f2c28c-9aee-4541-adb1-4c843fdaa837.png"/>
+</p>
+
+---
+
 ## Video 📄
 
-_En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
+_En este video se mostrará las funcionalidades._
 
 
 ## Autor ✒️
