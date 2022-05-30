@@ -103,6 +103,15 @@ _En esta sección aplicaremos validacion en firestore, ya que es importante sabe
 
 ---
 
+_**Sección Teoría**_
+
+_Como podemos apreciar podemos observar en las imagenes, que se dividen en segmentos, este segmento esta en desarollo ya que actualmente son datos estáticos, solo muestran teoría pero en un futuro seria cómodo mostrar datos proporcionados por el profesor, en la última imagen vemos una animación de como funciona el juego._
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43099030/171056945-66942d25-1aed-4215-b3c4-2b229a25b1b9.png"/>
+</p>
+
+---
 ## Video 📄
 
 _En este video se mostrará la compración del redimensionamiento por cada dispoistivo ejecutado, además de mostrar las vistas correspondientes previamente mostradas_
