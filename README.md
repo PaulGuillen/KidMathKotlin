@@ -22,7 +22,7 @@ _Un poco mas de información a tener en cuenta sobre las tablets [CalidadTablets
 
 ### Pre-requisitos 📋
 
-_Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore), conocimiento en graphview y demás gráficos_
+_Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de firebase (auth-firestore-database-storage)_
 
 _Algo importante son los constraintlayout, la división de porcentajes de pantalla [ConstraintLayout](https://www.geeksforgeeks.org/constraintlayout-in-android/)_
 
