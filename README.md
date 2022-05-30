@@ -60,6 +60,7 @@ _En esta parte vemos que usaremos el usuario test, en el cual esta en la parte i
  <img src="https://user-images.githubusercontent.com/43099030/171043088-eaf6a13c-971d-44b2-a16b-57671023c6a1.png"/>
 </p>
 
+---
 
 _**Proceso Suma**_
 
@@ -70,6 +71,8 @@ _En esta imagen vemos que la operación suma, tiene cuatro niveles de fácil has
  <img src="https://user-images.githubusercontent.com/43099030/171049106-d0f2059f-c9bf-4f51-a38c-58b75e5b1d05.png"/>
 </p>
 
+---
+
 _**Proceso Resta**_
 
 _Como vemos es lo mismo que suma, lo diferente es en la tercera imagen que muestra como se guarda el tipo de operación con su respectivo nivel seleccionado previamente._
@@ -78,14 +81,17 @@ _Como vemos es lo mismo que suma, lo diferente es en la tercera imagen que muest
  <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
 </p>
 
+---
+
 _**Proceso Multiplicación**_
 
 _Como vemos es lo mismo que suma y restas, lo diferente es en la tercera imagen que muestra como se guarda el tipo de operación con su respectivo nivel seleccionado previamente._
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
+ <img src="https://user-images.githubusercontent.com/43099030/171053514-61d105e9-ec98-4444-beff-281130548f23.png"/>
 </p>
 
+---
 
 ## Video 📄
 
