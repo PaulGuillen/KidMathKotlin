@@ -35,7 +35,7 @@ _Tener instalado Android Studio, conocer sobre kotlin, tener conocimiento de fir
 
 ## Ejecutando los diseños ⚙️
 
-_En esta etapa mostraremos el flujo de la app con capturas de pantalla de la misma app.
+_En esta etapa mostraremos el flujo de la app con capturas de pantalla de la misma app._
 
 _**Onboarding App**_
 
