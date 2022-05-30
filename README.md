@@ -65,8 +65,9 @@ _**Proceso Suma**_
 
 _En esta imagen vemos que la operación suma, tiene cuatro niveles de fácil hasta a experto, el nivel seleccionado fue el intermedio en el cual tiene un contador de 60 segundos y un puntaje en la parte superior de la segunda imagen, cuando el tiempo termine se muestra el puntaje y su mejor puntaje personal con sharedpreferences, ádemas de contar un boton de ir al siguiente nivel directamente y en la última imagen vemos el resultado en firestore con sus respectivos campos._
 
+
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
+ <img src="https://user-images.githubusercontent.com/43099030/171049106-d0f2059f-c9bf-4f51-a38c-58b75e5b1d05.png"/>
 </p>
 
 _**Proceso Resta**_
@@ -74,8 +75,9 @@ _**Proceso Resta**_
 _Como vemos es lo mismo que suma, lo diferente es en la tercera imagen que muestra como se guarda el tipo de operación con su respectivo nivel seleccionado previamente._
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43099030/171049106-d0f2059f-c9bf-4f51-a38c-58b75e5b1d05.png"/>
+ <img src="https://user-images.githubusercontent.com/43099030/171049918-2d988b70-892c-4c8f-9472-df4429ae668f.png"/>
 </p>
+
 
 ## Video 📄
 
