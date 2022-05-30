@@ -39,10 +39,10 @@ _En esta etapa mostraremos el flujo de la app con capturas de pantalla de la mis
 
 _**Onboarding App**_
 
-_Estas son las capturas de patnalla en la cual mostramos la secuencia para llegar al incio de sesión, esta secuencia solo se mostrará una sola vez, ya que utilizamos SharedPreferences para ejecurtalo una única vez._
+_Estas son las capturas de patnalla en la cual mostramos la secuencia para llegar al incio de sesión, esta secuencia solo se mostrará una sola vez, ya que utilizamos SharedPreferences para ejecutarlo una única vez._
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43099030/171041468-3a2914c2-b572-46ce-a8b6-8619c79582d0.png"/>
+ <img src="https://user-images.githubusercontent.com/43099030/171042820-02caab30-b5ce-48c7-9ea5-ae3d151ef528.png"/>
 </p>
 
 ## Video 📄
