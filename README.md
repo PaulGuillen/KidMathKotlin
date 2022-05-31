@@ -138,6 +138,8 @@ _Observamos que tiene información de la aplicación movil, también se observa 
 
 _En este video se mostrará las funcionalidades._
 
+**Video en progreso.**
+
 
 ## Autor ✒️
 
