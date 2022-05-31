@@ -115,7 +115,7 @@ _Como podemos apreciar podemos observar en las imagenes, que se dividen en segme
 
 _**Sección Perfil**_
 
-_Iniciamos desde el dashboard, como estudiante tenemos que ver nuestros scores y nuestros datos personales, en las imagenes se ven que hay 4 botones los cuales muestran el utlimo puntaje que has jugado, ádemas de ver tu correo, contraseña y la última vez que has jugado._
+_Iniciamos desde el dashboard, como estudiante tenemos que ver nuestros scores y nuestros datos personales, en las imagenes se ven que hay cuatro botones los cuales muestran el utlimo puntaje que has jugado, ádemas de ver tu correo, contraseña y la última vez que has jugado._
 
 
 <p align="center">
