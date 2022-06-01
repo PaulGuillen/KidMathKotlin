@@ -136,10 +136,11 @@ _Observamos que tiene información de la aplicación movil, también se observa 
 
 ## Video 📄
 
-_En este video se mostrará las funcionalidades._
+_En este video se mostrará las vistas de la app._
 
-**Video en progreso.**
+https://user-images.githubusercontent.com/43099030/171446684-9d30fc3b-53b9-4f10-b74b-453c2ec65fd2.mp4
 
+_Nota : El otro video esta en [MathKidAdmin](https://github.com/PaulGuillen/KidMathAdmin)._
 
 ## Autor ✒️
 
